@@ -42,10 +42,9 @@ a:visited {
 }
 
 h1 {
-  color: rgba(0, 0, 0, .3);
   font-weight: bold;
   font-size: 4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  text-shadow: 0 1px 0 #fff;
   margin: 0;
 }
 
