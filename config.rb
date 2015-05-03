@@ -47,11 +47,27 @@
 #   end
 # end
 
+helpers do
+  def htmlify(s)
+    marker = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+    Redcarpet::Render::SmartyPants.render(marker.render(s))
+  end
+end
+
+activate :zip, zip_map: [
+  { input_dir: 'source/images/screenshots', output_file: 'build/Tetheron_screenshots.zip' }
+]
+
+
+set :markdown_engine, :redcarpet
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+activate :dragonfly_thumbnailer
 
 # Build-specific configuration
 configure :build do

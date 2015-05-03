@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body {
+body.index {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
@@ -11,16 +11,16 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-a {
+.index a {
   text-decoration: none;
   color: #ccc;
 }
 
-a:hover {
+.index a:hover {
   color: #fff;
 }
 
-a:visited {
+.index a:visited {
   color: #555;
 }
 
@@ -41,7 +41,7 @@ a:visited {
   padding: 10vh 0 2vh 0;
 }
 
-h1 {
+.index h1 {
   font-weight: bold;
   font-size: 4em;
   text-shadow: 0 1px 0 #fff;
@@ -54,4 +54,42 @@ h1 {
 
 .follow {
   margin: 0.7em;
+}
+
+
+
+.subtitle {
+  padding-left: 0.5em;
+  font-size: 0.8em;
+  display: block;
+}
+
+dl {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body.press {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
+.press .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container .text-muted {
+  margin: 20px 0;
 }
