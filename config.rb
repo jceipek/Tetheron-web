@@ -54,6 +54,10 @@ helpers do
   end
 end
 
+set :url_root, 'http://tetheron.com'
+
+activate :search_engine_sitemap
+
 activate :zip, zip_map: [
   { input_dir: 'source/images/screenshots', output_file: 'build/Tetheron_screenshots.zip' }
 ]

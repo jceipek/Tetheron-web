@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 
 gem "middleman", "~>3.3.10"
 
+# For search engine sitemap
+gem 'middleman-search_engine_sitemap'
+
 # For gh-pages
 gem 'middleman-deploy', '~> 1.0.0'
 
