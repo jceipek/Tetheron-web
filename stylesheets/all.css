@@ -41,6 +41,24 @@ body.index {
   padding: 10vh 0 2vh 0;
 }
 
+form {
+  padding: 2em 0 1em 0;
+  font-size: 3vw;
+  font-family: 'Quicksand', sans-serif;
+}
+
+form input {
+  font-size: 3vw;
+  line-height: 1.6em;
+  padding-left: 0.4em;
+}
+
+form .btn {
+  font-size: 3vw;
+  line-height: 1.2em;
+  margin-bottom: 0.2em;
+}
+
 .index h1 {
 /*  font-weight: bold;
   font-size: 4em;
@@ -76,8 +94,6 @@ a img {
 .follow {
   margin: 0.7em;
 }
-
-
 
 .subtitle {
   padding-left: 0.5em;
