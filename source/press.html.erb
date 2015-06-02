@@ -61,7 +61,7 @@ title: Tetheron | Presskit
 	<h2>Credits</h2>
 	<dl class="dl-horizontal">
 		<% data.presskit.credits.each do |c| %>
-		<dt><%= link_to c.name c.website %></dt>
+		<dt><%= link_to c.name, c.website %></dt>
 		<dd><%= c.role %></dd>
 		<% end %>
 	</dl>

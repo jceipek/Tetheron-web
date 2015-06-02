@@ -2,14 +2,32 @@
 title: Tetheron
 ---
 
+<% content_for :head do %>
+	<meta name='description' content="Soar joyfully around a destructible arcade game arena by tethering and swinging from obstacles and your friends. With its two-finger, any-button controls, Tetheron is easy to learn but hard to master.">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@tetheron">
+	<meta name="twitter:title" content="Tetheron">
+	<meta name="twitter:description" content="Soar joyfully around a destructible arcade game arena by tethering and swinging from obstacles and your friends. With its two-finger, any-button controls, Tetheron is easy to learn but hard to master.">
+	<meta name="twitter:image" content="http://tetheron.com/images/TetheronTwitterCard.gif">
+
+	<meta name="og:site_name" content="Tetheron">
+	<meta name="og:url" content="http://tetheron.com/">
+	<meta name="og:image" content="http://tetheron.com/images/TetheronOG.gif">
+	<meta name="og:title" content="Tetheron">
+<% end %>
+
 <div class="centerpiece">
 	<p>Coming Soon:</p>
-	<h1>Tetheron</h1>
+	<h1><%= image_tag("tetheron_logo.svg", 'alt'=>"Tetheron") %></h1>
+	<!-- <h1>Tetheron</h1> -->
 	<p class='tagline'>2-6 player arcing arcade action</p>
 	<p class='follow'>Follow us <a href='https://twitter.com/intent/user?screen_name=tetheron'>@tetheron</a></p>
-	<%= image_tag("loop.gif") %>
-	<p><a href='press.html' class='press-link'>PRESS</a></p>
+	<p><a href='press.html' class='press-link'>
+		<%= image_tag("loop.gif") %>
+		PRESS
+	</a></p>
+	<p class='desc'>Soar joyfully around a destructible arcade arena by tethering and swinging from obstacles and your friends. With its two-finger, any-button controls, Tetheron is easy to learn but hard to master.</p>
 </div>
-
 
 <div class='footer'>A game by <a href='http://jceipek.com' target='_blank'>Julian Ceipek</a>, <a href='https://patrickquah.carbonmade.com'>Patrick Quah</a>, and <a href='http://www.juliebuchananmusic.com' target='_blank'>Julie Buchanan</a></div>
