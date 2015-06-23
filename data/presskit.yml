@@ -74,7 +74,6 @@ images:
     - out_of_options.png
     - swinging_competition.png
 
-
 credits:
     - name: Julian Ceipek
       role: Design & Development
@@ -85,3 +84,12 @@ credits:
     - name: Julie Buchanan
       role: Music & Sound Design
       website: http://www.juliebuchananmusic.com
+
+appearances:
+    - event: IndieCade ShowCase @ E3
+      website: http://www.indiecade.com/games/selected/tetheron/
+
+mentions:
+    - quote: ...a simple, amazing grappling-battle mechanic
+      source: Sam Machkovech & Kyle Orland, Ars Technica
+      website: http://arstechnica.com/gaming/2015/06/dog-butts-pooping-and-a-consent-simulator-indie-games-get-weird-at-e3/
