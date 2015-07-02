@@ -85,6 +85,17 @@ change_frequency: hourly
 		<button type="button" class="btn btn-default btn-lg btn-block">Download All Screenshots .zip (<%= (File.size("build/Tetheron_screenshots.zip").to_f / 2**20).round(2) %> MB)</button>
 	</a>
 	</div>
+	<h2>Icons and Logos</h2>
+	<div class='row'>
+	<% data.presskit.icons_and_logos.each_with_index do |i, index| %>
+	<div class="col-xs-4">
+	<%= link_to (thumb_tag ('logos/'+i), '300x', class: 'img-responsive'), (image_path ('screenshots/'+i)), {class: 'thumbnail'} %>
+	</div>
+	<% end %>
+	<a href="Tetheron_screenshots.zip">
+		<button type="button" class="btn btn-default btn-lg btn-block">Download All Icons and Logos .zip (<%= (File.size("build/Tetheron_logos.zip").to_f / 2**20).round(2) %> MB)</button>
+	</a>
+	</div>
 
 	<% if data.presskit.appearances? %>
 		<h2>Appearances</h2>
