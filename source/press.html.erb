@@ -89,7 +89,7 @@ change_frequency: hourly
 	<div class='row'>
 	<% data.presskit.icons_and_logos.each_with_index do |i, index| %>
 	<div class="col-xs-4">
-	<%= link_to (thumb_tag ('logos/'+i), '300x', class: 'img-responsive'), (image_path ('screenshots/'+i)), {class: 'thumbnail'} %>
+	<%= link_to (thumb_tag ('logos/'+i), '300x', class: 'img-responsive'), (image_path ('logos/'+i)), {class: 'thumbnail'} %>
 	</div>
 	<% end %>
 	<a href="Tetheron_screenshots.zip">
