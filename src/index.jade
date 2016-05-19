@@ -1,0 +1,37 @@
+extends src/_layouts/main.jade
+
+block fonts
+  link(href='http://fonts.googleapis.com/css?family=Quicksand|Orbitron', rel='stylesheet', type='text/css')
+
+block stylesheets
+  link(href='stylesheets/index.css', rel='stylesheet', type='text/css')
+
+block content
+  .centerpiece
+    p Coming Soon:
+    h1
+      img(alt='Tetheron', src='images/tetheron_logo.svg')
+    // <h1>Tetheron</h1>
+    p.tagline 2-6 player arcing arcade action
+
+    form#mc-embedded-subscribe-form.form-inline.validate(action='//tetheron.us11.list-manage.com/subscribe/post?u=bfc786f4322f9e83848a4ea91&id=3d8e89fbca', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+      .form-group
+        input#mce-EMAIL.form-control.email(type='email', value='', name='EMAIL', placeholder='Email Address', required='')
+        div(style='position: absolute; left: -5000px;')
+          input(type='text', name='b_bfc786f4322f9e83848a4ea91_3d8e89fbca', tabindex='-1', value='')
+        button#mc-embedded-subscribe.btn.btn-default(type='submit', name='subscribe') Sign Up
+    p
+      a.press-link(href='press.html')
+        img(src='images/loop.gif')
+        | PRESS
+    p.desc.
+      Tetheron puts 2-6 players in control of hurtling neon wrecking balls
+      grappling and swinging to survive a centripetal battle-royale.
+
+      One button controls make sure that everyone can get their tether on,
+      even if they’ve never touched a controller in their lives.
+  .footer
+    p A game by
+      each credit,idx in credits
+        a(href=credit.website, target='_blank') #{" "+credit.name}
+        | #{((idx===credits.length - 2)? ", and" : (idx===credits.length - 1? "" : ", "))}
